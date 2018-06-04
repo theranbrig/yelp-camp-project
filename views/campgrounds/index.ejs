@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+
+    <div class="container">
+        <header class="jumbotron">
+            <div>
+                <h1><i class="fa fa-free-code-camp"></i>YelpCamp</h1>
+                <p>THE WORLD IS YOUR CAMPGROUND. EXPLORE IT.</p>
+                <p><a class="btn-lg btn-primary" href="/campgrounds/new">Submit New Camp!</a></p>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row text-center campground-images flex">
+            <% campgrounds.forEach(campground => { %>
+                <div class="col-lg0-4 col-md-4 col-sm-6">
+                    <div class="thumbnail thumbnail-index">
+                        <a href="/campgrounds/<%= campground._id %>"><img class="img-responsive image" src="<%= campground.image %>"></a>
+                        <div class="caption">
+                            <h4> <%= campground.name %> </h4>
+                        </div>
+                        <div id="star-rating-main">
+                            <p>
+                                <% for (i = 0; i < 5; i++) { %>
+                                        <% if (i < (campground.rating - 0.5)) { %>
+                                            <i class="fa fa-star"></i>
+                                        <% } else if (i < (campground.rating - 0.49)) { %>
+                                            <i class="fa fa-star-half-o"></i>
+                                        <% } else { %>
+                                            <i class="fa fa-star-o"></i>
+                                        <% } %>
+                                <% } %>(<%= campground.rating.toFixed(1) %>)</p>
+                            <p>
+                        </div>
+                        <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+
+
+<% include ../partials/footer %>

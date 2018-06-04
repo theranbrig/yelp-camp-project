@@ -1,0 +1,142 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.new-camp-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.new-form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.thumbnail-index {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-index img {
+    padding: 0;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.thumbnail-index img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    text-shadow: none;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.btn-warning {
+    float: left;
+    margin-right: 5px;
+}
+
+#delete-form {
+    display: inline;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+#star-rating {
+    font-size: 1.75em;
+}
+
+#star-rating-main {
+    font-size: 1.25em;
+}
+
+.navbar-primary .navbar-toggle .icon-bar {
+    color: #337ab7;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    text-align: right;
+}
+
+h2 a:hover,
+.btn-lg:hover {
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    background-image: linear-gradient(
+            to top,
+            rgba(226, 241, 253, 0.8),
+            rgba(20, 20, 20, 0.3)
+        ),
+        url("https://images.unsplash.com/photo-1437382944886-45a9f73d4158?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(150, 150, 150, 1);
+}
+
+#profileImage {
+    max-width: 150px;
+    border-radius: 100%;
+}
+
+.navbar {
+    background-color: #428bca;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar {
+    border-radius: none;
+    border: none;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #e3f2fd;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #428bca;
+    background-color: #8fd0ff;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+/* .main-section {
+    float: left;
+} */
